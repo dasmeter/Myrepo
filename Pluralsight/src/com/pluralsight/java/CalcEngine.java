@@ -7,6 +7,8 @@ public class CalcEngine {
 //		double[] rightVals = {50.0d, 92.0d, 17.0d, 3.0d};
 //		char[] opCodes = {'d', 'a', 's', 'm'};
 //		double[] results = new double[opCodes.length];
+//      commit test 123
+//      commit test 1234
 
 		//Declare math equations array
 		MathEquation[] equations = new MathEquation[4];

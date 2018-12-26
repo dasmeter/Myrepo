@@ -3,10 +3,10 @@ package com.pluralsight.java;
 public class variableTest2 {
 
 	public static void main(String[] args) {
-		int valA = 52;
-		int valB = 56;
-		int valC = 53;
-		int valD = 51;
+		int valA = 62;
+		int valB = 66;
+		int valC = 63;
+		int valD = 61;
 		
 		int result1 = valA - valB / valC;
 		

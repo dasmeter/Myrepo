@@ -8,11 +8,11 @@ public class variableTest2 {
 		int valC = 63;
 		int valD = 61;
 		
-		int result1 = valA - valB / valC;
+		int result1 = valA + valB / valC;
 		
-		int result2 = (valA - valB) / valC;
+		int result2 = (valA + valB) / valC;
 		
-	    System.out.println(result2);
+	    System.out.println(result1);
 		
 
 	}

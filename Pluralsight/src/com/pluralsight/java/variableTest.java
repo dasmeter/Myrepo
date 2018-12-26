@@ -3,7 +3,7 @@ package com.pluralsight.java;
 public class variableTest {
 
 	public static void main(String[] args) {
-		int a = 156;
+		int a = 158;
 		System.out.println(a);
 		
 		int b = 2;

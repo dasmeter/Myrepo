@@ -27,23 +27,40 @@ public class CalcEngine {
 			System.out.println("result = ");
 			System.out.println(equation.getResult());
 		}
+	
+	System.out.println();
+	System.out.print("Using Overloads");
+	System.out.println();
+	
+	double leftDouble = 9.0d;
+	double rightDouble = 4.0d;
+	int leftInt = 9;
+	int rightInt = 4;
+	
+	MathEquation equationOverload = new MathEquation('d');
+	
+	equationOverload.execute(leftDouble, rightDouble);
+	System.out.println("result= ");
+	System.out.println(equationOverload.getResult());
+	
+	/*passing in int values instead of doubles*/
+	equationOverload.execute(leftInt, rightInt);
+	System.out.println("result= ");
+	System.out.println(equationOverload.getResult());
+	
+	/*passing both int and double values instead of just int/doubles*/
+	equationOverload.execute((double)leftInt, rightInt);
+	System.out.println("result= ");
+	System.out.println(equationOverload.getResult());
+		
+		
+		
+		
 	}
 	
-	//method to used create a new instance and setting all of the values
-	//Also to avoid running it four different 
+
 	
-	/* REMOVE THIS CREATE METHOD - USING CONSTRUCTORS INSTEAD
-	 * 
-	 */
-	/*public static MathEquation create(double leftVal, double rightVal, char opCode) {
-		MathEquation equation = new MathEquation();
-		
-		/*updated to use mutator methods*/
-	    /*quation.setLeftVal(leftVal);
-		equation.setRightVal(rightVal);
-		equation.setOpCode(opCode);
-		
-		return equation;*/
+	
 		
 	
 	

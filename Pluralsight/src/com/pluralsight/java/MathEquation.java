@@ -19,7 +19,7 @@ public class MathEquation {
 	/* only add accessor no mutator */
 	public double getResult() { return result;}
 	
-	/* create constructor without arguments */
+	/* create constructor without arguments/parameters */
 	public MathEquation() {}
 	
 	/* initialize/start the constructor */

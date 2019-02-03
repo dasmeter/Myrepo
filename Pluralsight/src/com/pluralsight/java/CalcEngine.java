@@ -3,18 +3,29 @@ package com.pluralsight.java;
 public class CalcEngine {
 
 	public static void main(String[] args) {
-//		double[] leftVals = {100.0d, 25.0d, 225.0d, 11.0d};
-//		double[] rightVals = {50.0d, 92.0d, 17.0d, 3.0d};
-//		char[] opCodes = {'d', 'a', 's', 'm'};
-//		double[] results = new double[opCodes.length];
-//      commit test 123
-//      commit test 1234
+//		useMathEquation();
+//      useCalculatorBase();
+		
+	String[] statements = {
+			"divide 100.0 50.0",
+			"add 25.0 92.0",
+			"subtract 225.0 17.0",	
+			"multiply 11.0 3.0"
+	};
+	
+	CalculateHelper helper = new CalculateHelper();
+	for(String statement:statements) {
+		helper.process(statement);
+		System.out.println(helper);
+	}
+}
 
 		//Declare math equations array
+	static void useMathEquation() {
 		MathEquation[] equations = new MathEquation[4];
 		//Call the Create method on line 28 and pass in values
 		//Replace create method with constructor
-		equations[0] = new MathEquation('d', 100.0d, 50.0d);
+		equations[0] = new MathEquation('d', 100.0d, 50.0d);  // 100.0 / 50.0 = 2.0
 		equations[1] = new MathEquation('a', 25.0d, 92.0d);
 		equations[2] = new MathEquation('s', 225.0d, 17.0d);
 		equations[3] = new MathEquation('m', 11.0d, 3.0d);
